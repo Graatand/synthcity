@@ -326,8 +326,8 @@ class JensenShannonDistance(StatisticalEvaluator):
                 axis=0,
                 fill_value=0,
             )
-            stats_gt[col] += 1
-            stats_syn[col] += 1
+            #stats_gt[col] += 1
+            #stats_syn[col] += 1
 
             stats_[col] = jensenshannon(stats_gt[col], stats_syn[col])
             if np.isnan(stats_[col]):
